@@ -1,0 +1,77 @@
+<igx-nav-drawer [isOpen]="false" width="320px" [pin]="true" [pinThreshold]="1024" class="nav-drawer">
+  <ng-template igxDrawerMini>
+    <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/explorer" class="nav-drawer-item">
+      <igx-icon family="material" class="icon">file_copy</igx-icon>
+    </span>
+    <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/search" class="nav-drawer-item">
+      <igx-icon family="material" class="icon">search</igx-icon>
+    </span>
+    <span [isHeader]="false" [active]="false" igxDrawerItem routerLink="/extensions" class="nav-drawer-item">
+      <igx-icon family="material" class="icon">extension</igx-icon>
+    </span>
+  </ng-template>
+  <ng-template igxDrawer>
+    <span [isHeader]="false" [active]="false" igxDrawerItem class="nav-drawer-item">
+      <igx-icon family="material" class="icon_1">account_circle</igx-icon>
+      <span class="fake_title">Title goes here</span>
+    </span>
+  </ng-template>
+</igx-nav-drawer>
+<div class="group column">
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<igx-tabs [selectedIndex]="0" [disableAnimation]="true" tabAlignment="start" class="tab-layout">
+  <igx-tab-item class="tab">
+    <igx-tab-header>
+      <igx-prefix>
+        <igx-icon family="material" class="icon_1">code</igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon family="material" class="icon_1">clear</igx-icon>
+      </igx-suffix>
+      <div>
+        <p class="igx-typography__body-1 text_1">index.html</p>
+      </div>
+    </igx-tab-header>
+    <igx-tab-content class="tab-content row">
+      <p class="igx-typography__body-1 text">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Team-Collaboration-App&lt;/title&gt;
+&lt;/head&gt;
+&lt;body class="igx-typography igx-scrollbar"&gt;
+    &lt;app-root&gt;&lt;/app-root&gt;
+&lt;/body&gt;
+&lt;/html&gt;</p>
+    </igx-tab-content>
+  </igx-tab-item>
+  <igx-tab-item class="tab">
+    <igx-tab-header>
+      <igx-prefix>
+        <igx-icon family="material" class="icon_1">code</igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon family="material" class="icon_1">clear</igx-icon>
+      </igx-suffix>
+      <div>
+        <p class="igx-typography__body-1 text_1">index.ts</p>
+      </div>
+    </igx-tab-header>
+    <igx-tab-content class="tab-content row">
+      <p class="igx-typography__body-1 text">import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+
+if (environment.production) {
+    enableProdMode();
+}
+
+const bootstrap = () =&gt; platformBrowserDynamic().bootstrapModule(AppModule);</p>
+    </igx-tab-content>
+  </igx-tab-item>
+</igx-tabs>

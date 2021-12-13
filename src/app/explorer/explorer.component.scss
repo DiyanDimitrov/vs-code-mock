@@ -1,0 +1,29 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  align-items: stretch;
+  position: relative;
+  width: 350px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.text {
+  min-width: min-content;
+  margin: 15px;
+  height: max-content;
+}
+.list {
+  height: max-content;
+  min-width: max-content;
+}
+.list-item {
+  min-width: 0;
+  min-height: 0;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,46 @@
+:host {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.group {
+  align-items: stretch;
+  position: relative;
+  width: 350px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.text {
+  min-width: min-content;
+  margin: 15px;
+  height: max-content;
+}
+.list {
+  height: max-content;
+  min-width: max-content;
+}
+.list-item {
+  min-width: 0;
+  min-height: 0;
+}
+.avatar {
+  background-color: hsla(var(--igx-secondary-700));
+  color: hsla(var(--igx-surface-500));
+}
+.avatar_1 {
+  background-color: hsla(var(--igx-warn-500));
+  color: hsla(var(--igx-surface-500));
+}
+.avatar_2 {
+  background-color: hsla(var(--igx-grays-900));
+  color: hsla(var(--igx-surface-500));
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
