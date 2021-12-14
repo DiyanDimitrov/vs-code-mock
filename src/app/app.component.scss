@@ -43,14 +43,10 @@
   position: relative;
 }
 .text {
+  min-width: min-content;
   margin: 15px;
+  height: max-content;
   color: hsla(var(--igx-secondary-800));
-  min-width: min-content;
-  height: max-content;
-}
-.text_1 {
-  min-width: min-content;
-  height: max-content;
 }
 .tab-layout {
   min-width: 0;
